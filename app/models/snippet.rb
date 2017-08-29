@@ -3,4 +3,6 @@ class Snippet < ApplicationRecord
   validates :content, length: { minimum: 0 }, allow_nil: false
 
   belongs_to :user
+
+  has_many :comments
 end
