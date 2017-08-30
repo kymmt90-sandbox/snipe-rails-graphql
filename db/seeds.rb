@@ -1,7 +1,7 @@
 users = User.create(
   [
-    { email: 'foo@example.com', password: 'password' },
-    { email: 'bar@example.com', password: 'password' }
+    { email: 'foo@example.com', password: 'password', role: :normal },
+    { email: 'bar@example.com', password: 'password', role: :admin }
   ]
 )
 

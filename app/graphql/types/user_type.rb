@@ -3,4 +3,5 @@ Types::UserType = GraphQL::ObjectType.define do
 
   field :id, !types.ID
   field :email, !types.String
+  field :role, !Types::RoleEnum
 end
