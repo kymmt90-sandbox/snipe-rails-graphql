@@ -1,6 +1,7 @@
 class User < ApplicationRecord
   enum role: [:normal, :admin]
 
+  has_many :articles, dependent: :destroy
   has_many :comments
   has_many :snippets, dependent: :destroy
   has_many :stars
