@@ -1,8 +1,5 @@
 class Snippet < ApplicationRecord
-  validates :title, presence: true
-  validates :content, length: { minimum: 0 }, allow_nil: false
-
-  belongs_to :user
+  include Document
 
   has_many :comments
   has_many :stars
